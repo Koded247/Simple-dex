@@ -37,6 +37,7 @@ export const ConnectButtonStyle = styled.button`
   background: #00E599;
   font-weight: 600;
   font-size: 1rem;
+  margin-left: -100px
 `;
 
 export const BodyStyle = styled.main`

@@ -5,13 +5,24 @@ import {
   LogoStyle,
 } from "../../Styles/Header";
 import { formatAddress } from "../../utils/helpers";
+import GlobalPreferences from './GlobalPreferences';
+
 
 export const Header = () => {
   return (
-    <HeaderStyle>
+    <>
+        <HeaderStyle>
       <Logo />
+      
+      {/* <GlobalPreferences /> */}
       <ConnectButton />
+      
+      
     </HeaderStyle>
+    
+
+    </>
+
   );
 };
 
@@ -26,6 +37,7 @@ export const Logo = () => {
   );
 };
 
+
 export const ConnectButton = () => {
   const { open } = useAppKit();
   const { address, isConnected } = useAppKitAccount();
@@ -34,8 +46,11 @@ export const ConnectButton = () => {
     open();
   };
   return (
+   <div className=" flex">
+     <GlobalPreferences />
     <ConnectButtonStyle onClick={handleButtonClick}>
       {isConnected ? formatAddress(address ?? "") : "Connect Wallet"}
     </ConnectButtonStyle>
+   </div>
   );
 };

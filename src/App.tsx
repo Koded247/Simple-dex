@@ -10,6 +10,7 @@ import { TabLinks } from "./Constants";
 import { BodyStyle } from "./Styles/Header";
 import { SettingsIcon, TabLink } from "./Components/Swap/TabLink";
 import "./connection.ts";
+import GlobalPreferences from '../src/Components/Header/GlobalPreferences.tsx';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
   return (
     <>
       <Header />
+    
       <BodyStyle>
         <div className="cont">
           <div className="top">
