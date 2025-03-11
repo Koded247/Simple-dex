@@ -76,7 +76,6 @@ const GlobalPreferences: React.FC = () => {
                   </option>
                 ))}
               </select>
-              
             </div>
           </div>
           <div className="flex justify-between items-center">
@@ -93,7 +92,6 @@ const GlobalPreferences: React.FC = () => {
                   </option>
                 ))}
               </select>
-              
             </div>
           </div>
         </div>
